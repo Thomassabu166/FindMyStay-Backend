@@ -29,6 +29,10 @@ const PropertySchema=new mongoose.Schema({
     isAvailable:{
         type:Boolean,
         default:true
+    },
+    isApproved:{
+        type:Boolean,
+        default:false
     }
 },{timestamps:true});
 
