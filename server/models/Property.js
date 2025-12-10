@@ -26,6 +26,11 @@ const PropertySchema=new mongoose.Schema({
         type:String,
         default:""
     },
+    category:{
+        type:String,
+        required:true,
+        enum:['Men','Women','Family']
+    },
     isAvailable:{
         type:Boolean,
         default:true
